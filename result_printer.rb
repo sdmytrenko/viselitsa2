@@ -1,5 +1,7 @@
 # Печать результатов на экран. Он выводит состояние 
 # игры на экран
+require "./graphic_method.rb"
+
 class ResultPrinter
 	def print_status(game) #передаем клас игры
 
@@ -8,7 +10,7 @@ class ResultPrinter
 		puts "\nСлово: " + get_word_for_print(game.secret_word, game.good_letters)
 		puts "Ошибки (#{game.errors}): #{game.bad_letters.join(", ")}"
 
-		print_viselitsa(game.errors)
+		#print_viselitsa(game.errors)
 
 		if game.errors >= 7
 			puts puts "Вы проиграли :("
