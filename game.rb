@@ -69,9 +69,23 @@ class Game
 		end
 	end
 
+	def secret_word # Геттеры - Это позволяет получить доступ извне ко всем полям
+		return @secret_word
+	end
 
+	def good_letters # в Ruby в последней строчке метода можно опустить слово return
+		@good_letters
+	end
 
+	def bad_letters
+		@bad_letters
+	end
 
+	def status
+		@status
+	end
 
-
+	def errors
+		@errors
+	end
 end
